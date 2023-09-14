@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="main.js" defer></script>
+    <script src="datalist.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>PokeDB</title>
   </head>
@@ -272,7 +273,14 @@
       <section>
         <h1>Poke<span>DB</span></h1>
         <form>
-          <input name="search" type="search" placeholder="Squirtle" />
+          <input
+            list="datalist"
+            name="search"
+            type="search"
+            placeholder="Squirtle"
+            autocomplete="off"
+          />
+          <datalist id="datalist"></datalist>
           <button>Søg</button>
         </form>
       </section>
